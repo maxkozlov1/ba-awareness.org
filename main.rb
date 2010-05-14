@@ -1,30 +1,40 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
+require 'erb'
+require 'less'
 
+#
 # Set configurations
+#
+
 set :public, File.dirname(__FILE__) + '/static'
 set :views, File.dirname(__FILE__) + '/views'
-set :haml, {:format => :html5}
+set :erb, {:format => :html5}
 
-# Sass setup
+#
+# Less setup
+#
+
 get '/css/screen.css' do
-	sass :screen
+	less :screen
 end
 
 get '/css/print.css' do
-	sass :print
+	less :print
 end
 
+#
 # Routes
+#
+
 get '/' do 
-	haml :index
+	erb :index
 end
 
-get '/hospitals'do
-	haml :hospitals
+get '/hospitals' do
+	erb :hospitals
 end
 
 get '/about' do
-	haml :about 
+	erb :about 
 end
