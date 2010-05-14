@@ -9,12 +9,10 @@ set :haml, {:format => :html5}
 
 # Sass setup
 get '/css/screen.css' do
-	content-type 'text/css', :charset => 'utf-8'
 	sass :screen
 end
 
 get '/css/print.css' do
-	content-type 'text/css', :charset => 'utf-8'
 	sass :print
 end
 
