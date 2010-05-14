@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'erb'
-require 'less'
 
 #
 # Set configurations
@@ -10,18 +9,6 @@ require 'less'
 set :public, File.dirname(__FILE__) + '/static'
 set :views, File.dirname(__FILE__) + '/views'
 set :erb, {:format => :html5}
-
-#
-# Less setup
-#
-
-get '/css/screen.css' do
-	less :screen
-end
-
-get '/css/print.css' do
-	less :print
-end
 
 #
 # Routes
