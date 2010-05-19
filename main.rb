@@ -22,6 +22,14 @@ get '/hospitals' do
 	erb :hospitals
 end
 
-get '/about' do
-	erb :about 
+get '/whatisit' do
+	erb :whatisit 
+end
+
+get '/needmorehelp' do
+  erb :needmorehelp
+end
+
+get '/liverfunds' do
+  erb :liverfunds
 end
