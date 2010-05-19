@@ -8,7 +8,6 @@ require 'erb'
 
 set :public, File.dirname(__FILE__) + '/static'
 set :views, File.dirname(__FILE__) + '/views'
-set :erb, {:format => :html5}
 
 #
 # Routes
