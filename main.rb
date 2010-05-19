@@ -30,6 +30,6 @@ get '/needmorehelp' do
   erb :needmorehelp
 end
 
-get '/liverfunds' do
-  erb :liverfunds
+get '/liverfund' do
+  erb :liverfund
 end
