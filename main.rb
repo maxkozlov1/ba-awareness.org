@@ -14,15 +14,15 @@ set :views, File.dirname(__FILE__) + '/views'
 #
 
 get '/' do 
-	erb :index
+  erb :index
 end
 
 get '/hospitals' do
-	erb :hospitals
+  erb :hospitals
 end
 
 get '/whatisit' do
-	erb :whatisit 
+  erb :whatisit 
 end
 
 get '/needmorehelp' do
