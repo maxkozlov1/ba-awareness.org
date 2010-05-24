@@ -10,7 +10,7 @@ set :public, File.dirname(__FILE__) + '/static'
 set :views, File.dirname(__FILE__) + '/views'
 
 #
-# Routes
+# Main RoutesRoutes
 #
 
 get '/' do 
@@ -25,10 +25,12 @@ get '/whatisit' do
   erb :whatisit 
 end
 
-get '/needmorehelp' do
-  erb :needmorehelp
+# load '/whatisit/<moreinfo>'
+load 'whatisit_routes.rb'
+
+get '/stories' do
+  erb :stories
 end
 
-get '/liverfund' do
-  erb :liverfund
-end
+# load '/stories/<name>'
+load 'stories_routes.rb'
