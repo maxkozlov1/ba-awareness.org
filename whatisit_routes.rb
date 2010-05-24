@@ -1,3 +1,3 @@
-get 'whatisit/whatisba' do
+get '/whatisit/whatisba' do
   erb :whatisba_whatisit
 end
