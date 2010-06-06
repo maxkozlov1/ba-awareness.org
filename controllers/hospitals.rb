@@ -1,3 +1,3 @@
 get '/hospitals' do
-	erb :hospitals
+	erb :'hospitals/index'
 end
