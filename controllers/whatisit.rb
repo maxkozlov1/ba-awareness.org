@@ -1,3 +1,3 @@
 get '/whatisit/whatisba' do
-  erb :whatisba_whatisit
+  erb :"/whatisit/whatisba"
 end

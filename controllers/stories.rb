@@ -1,3 +1,3 @@
 get '/stories/ashley-johansen' do
-  erb 'stories/ashley'
+  erb :"stories/ashley"
 end
